@@ -51,5 +51,49 @@ h1 {
   width: 100%;
   margin: 2rem auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem auto;
+  justify-content: center;
+  background-color: rgb(252, 219, 219);
+  align-items: center;
+}
+
+.isCompleted {
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+}
+
+.todoTitle {
+  width: 90%;
+  padding: 0.5rem 2rem;
+  font-size: 1.3rem;
+}
+.textcut {
+  text-decoration: line-through;
+  width: 90%;
+  padding: 0.5rem 2rem;
+  font-size: 1.3rem;
+}
+
+.deleteBtn {
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+  border: 1px solid red;
+  background-color: rgb(255, 70, 70);
+  border-radius: 100px;
+  cursor: pointer;
+  color: white;
+}
+.deleteBtn:hover {
+  background-color: rgb(160, 0, 0);
+  transition-duration: 200ms;
 }
